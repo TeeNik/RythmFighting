@@ -110,8 +110,6 @@ public class StepParser : MonoBehaviour
                 }
                 metadata = metadata.NextMatch();
             }
-            print(songItem);
-
             float time = 0.0f;
             string bpmStr = songItem.BPMs.Split('=')[1].TrimEnd('0', '.');
             float bpm = float.Parse(bpmStr);
@@ -141,7 +139,6 @@ public class StepParser : MonoBehaviour
                     }
                 }
             }
-            print(songItem);
         }
     }
 }
